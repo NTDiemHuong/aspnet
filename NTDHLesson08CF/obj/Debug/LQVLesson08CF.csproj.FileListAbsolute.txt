@@ -1,0 +1,2 @@
+C:\xampp\htdocs\2911\VƯƠNG\LQVLesson08CF\LQVLesson08CF\LQVLesson08CF\obj\Debug\LQVLesson08CF.csproj.AssemblyReference.cache
+C:\xampp\htdocs\2911\VƯƠNG\LQVLesson08CF\LQVLesson08CF\LQVLesson08CF\obj\Debug\LQVLesson08CF.csproj.CoreCompileInputs.cache
