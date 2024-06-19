@@ -1,0 +1,39 @@
+﻿@model IEnumerable<NTDHBaiKiemTraGK.Models.NTDHKhoa>
+
+@{
+    ViewBag.Title = "NTDHIndex";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("NTDH: Create New", "NTDHCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NTDHtenKH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NTDHTrangThai)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NTDHtenKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NTDHTrangThai)
+        </td>
+        <td>
+            @Html.ActionLink("NTDH:Edit", "NTDHEdit", new { id=item.NTDHMaKH }) |
+            @Html.ActionLink("NTDH:Details", "NTDHDetails", new { id=item.NTDHMaKH }) |
+            @Html.ActionLink("NTDH:Delete", "NTDHDelete", new { id=item.NTDHMaKH })
+        </td>
+    </tr>
+}
+
+</table>

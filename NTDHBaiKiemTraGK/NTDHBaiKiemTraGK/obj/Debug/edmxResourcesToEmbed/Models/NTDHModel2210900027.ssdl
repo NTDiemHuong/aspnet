@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NTDHCNTT2Lesson07DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+	<EntityType Name="NTDHKhoa">
+		<Key>
+			<PropertyRef Name="NTDHMaKH" />
+		</Key>
+		<Property Name="NTDHMaKH" Type="nchar" MaxLength="10" Nullable="false" />
+		<Property Name="NTDHtenKH" Type="nvarchar" MaxLength="50" />
+		<Property Name="NTDHTrangThai" Type="bit" />
+	</EntityType>
+	<EntityType Name="NTDHSinhVien">
+		<Key>
+			<PropertyRef Name="NTDHMaSV" />
+		</Key>
+		<Property Name="NTDHMaSV" Type="nvarchar" MaxLength="50" Nullable="false" />
+		<Property Name="NTDHHoSV" Type="nvarchar" MaxLength="50" />
+		<Property Name="NTDHTenSV" Type="nvarchar" MaxLength="50" />
+		<Property Name="NTDHNgaySinh" Type="date" />
+		<Property Name="NTDHPhai" Type="bit" />
+		<Property Name="NTDHPhone" Type="nchar" MaxLength="10" />
+		<Property Name="NTDHEmail" Type="nvarchar" MaxLength="50" />
+		<Property Name="NTDHMaKH" Type="nchar" MaxLength="10" />
+	</EntityType>
+	<EntityContainer Name="NTDHCNTT2Lesson07DbModelStoreContainer">
+		<EntitySet Name="NTDHKhoa" EntityType="Self.NTDHKhoa" Schema="dbo" store:Type="Tables" />
+		<EntitySet Name="NTDHSinhVien" EntityType="Self.NTDHSinhVien" Schema="dbo" store:Type="Tables" />
+	</EntityContainer>
+</Schema>

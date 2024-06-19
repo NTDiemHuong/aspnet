@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+	<EntityContainerMapping StorageEntityContainer="NTDHCNTT2Lesson07DbModelStoreContainer" CdmEntityContainer="NTDHCNTT2Lesson07DbEntities">
+		<EntitySetMapping Name="NTDHKhoa">
+			<EntityTypeMapping TypeName="NTDHCNTT2Lesson07DbModel.NTDHKhoa">
+				<MappingFragment StoreEntitySet="NTDHKhoa">
+					<ScalarProperty Name="NTDHMaKH" ColumnName="NTDHMaKH" />
+					<ScalarProperty Name="NTDHtenKH" ColumnName="NTDHtenKH" />
+					<ScalarProperty Name="NTDHTrangThai" ColumnName="NTDHTrangThai" />
+				</MappingFragment>
+			</EntityTypeMapping>
+		</EntitySetMapping>
+		<EntitySetMapping Name="NTDHSinhVien">
+			<EntityTypeMapping TypeName="NTDHCNTT2Lesson07DbModel.NTDHSinhVien">
+				<MappingFragment StoreEntitySet="NTDHSinhVien">
+					<ScalarProperty Name="NTDHMaSV" ColumnName="NTDHMaSV" />
+					<ScalarProperty Name="NTDHHoSV" ColumnName="NTDHHoSV" />
+					<ScalarProperty Name="NTDHTenSV" ColumnName="NTDHTenSV" />
+					<ScalarProperty Name="NTDHNgaySinh" ColumnName="NTDHNgaySinh" />
+					<ScalarProperty Name="NTDHPhai" ColumnName="NTDHPhai" />
+					<ScalarProperty Name="NTDHPhone" ColumnName="NTDHPhone" />
+					<ScalarProperty Name="NTDHEmail" ColumnName="NTDHEmail" />
+					<ScalarProperty Name="NTDHMaKH" ColumnName="NTDHMaKH" />
+				</MappingFragment>
+			</EntityTypeMapping>
+		</EntitySetMapping>
+	</EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NTDHCNTT2Lesson07DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NTDHKhoa">
+    <Key>
+      <PropertyRef Name="NTDHMaKH" />
+    </Key>
+    <Property Name="NTDHMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NTDHtenKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NTDHTrangThai" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="NTDHSinhVien">
+    <Key>
+      <PropertyRef Name="NTDHMaSV" />
+    </Key>
+    <Property Name="NTDHMaSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NTDHHoSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NTDHTenSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NTDHNgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="NTDHPhai" Type="Boolean" />
+    <Property Name="NTDHPhone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NTDHEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NTDHMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="NTDHCNTT2Lesson07DbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NTDHKhoa" EntityType="Self.NTDHKhoa" />
+    <EntitySet Name="NTDHSinhVien" EntityType="Self.NTDHSinhVien" />
+  </EntityContainer>
+</Schema>
